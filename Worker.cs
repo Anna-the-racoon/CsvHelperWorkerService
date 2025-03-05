@@ -20,7 +20,7 @@ namespace WorkerServiceTest
                 {
                     _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
 
-                    string filePath = @"C:\Users\amityaeva\Documents\пробник.csv";
+                    string filePath = @"C:\PROJECTS\MyOwn\WorkerServiceTest\пробник.csv";
                     using (var reader = new StreamReader(filePath))
                     using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
                     {
